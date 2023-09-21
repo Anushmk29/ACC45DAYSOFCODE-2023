@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,l,v1,v2,time1,time2;
+	    cin>>t;
+	while(t--)
+	{
+	    cin>>l>>v1>>v2;
+	    if(l%v1==0)
+	   {
+	       time1=l/v1;
+	   }
+	   else time1=l/v1+1;
+	   
+	    if(l%v2==0)
+	   {
+	       time2=l/v2;
+	   }
+	   else time2=l/v2+1;
+	   
+	   int diff = time1-time2;
+	   if(diff>=2)
+	   {
+	       cout<<diff-1<<endl;
+	   }
+	   else if(diff==1)
+	   {
+	       cout<<0<<endl;
+	   }
+	   else if (diff==0)
+	   {
+	       cout<<-1<<endl;
+	   }
+	   
+	   
+	}
+	return 0;
+}
