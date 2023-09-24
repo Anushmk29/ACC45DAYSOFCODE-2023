@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,pa,pb,pc;
+	cin>>t;
+	while(t--)
+	{
+	    cin>>pa>>pb>>pc;
+	    if(pa+pc>pb  || pa==pb && pb==pc)
+	    {
+	        cout<<pa+pc<<endl;
+	    }
+	    else if(pb>pa && pb>pc)
+	    {
+	        cout<<pb<<endl;
+	    }
+	}
+	return 0;
+}
